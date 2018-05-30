@@ -1,0 +1,44 @@
+Details:
+Répertoire de rendu: Colle_prime_numbers
+Droits: ramassage-tek r, duclos_a r
+Langage: PHP
+
+Introduction:
+Un nombre est dit premier s'il n'a pas d'autres diviseurs que lui-même et 1.
+Un nombre non premier peut donc être décomposé en une liste de diviseurs.
+
+Exercice:
+Coder la fonction prime_numbers, qui prendra en paramètre un nombre et
+devra afficher la liste de ses diviseurs ou un message pour dire que le
+nombre est premier.
+Il devra également retourner :
+- true si le nombre est premier
+- false si le nombre est divisible.
+
+Exemple:
+prime_numbers(100);
+
+// 100 n'est pas premier, donc on peut découper 100.
+// 100 se divise par 2 ? oui => 2 * 50 = 100
+// 50 se divise par 2 ? oui => 2 * 25 = 50
+// 25 se divise par 2 ? non
+// 25 se divise par 3 ? non
+// 25 se divise par 5 ? oui => 5 * 5 = 25
+// 5 est premier.
+// Donc le programme doit afficher :
+100 = 2 x 2 x 5 x 5
+// false
+
+prime_numbers(97);
+
+// 97 est premier, donc on ne peut pas découper 97.
+// Donc le programmme doit afficher :
+97 est premier
+// true
+
+Conseils:
+Faites dans un premier temps une fonction is_prime qui vérifie si un
+nombre donné en paramètre est premier ou non.
+
+Regardez ensuite l'exemple ci-dessus pour comprendre comment résoudre ce
+petit problème. A vous de trouver un algorithme qui représente cela.
